@@ -1,0 +1,16 @@
+#-----------------------------------
+--- # Database
+#-----------------------------------
+spring:
+  ## Datasource
+  datasource:
+    url: jdbc:postgresql://localhost:5432/x-mart
+    username: postgres
+    password: seol12
+    driver-class-name: org.postgresql.Driver
+  ## Configuration
+  jpa:
+    #    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      # COMMENT OUT OR CHANGE TO VALIDATE ON PRODUCTION
+      ddl-auto: update
